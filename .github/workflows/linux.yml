@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
   schedule:
-    - cron: |
+    no- cron: |
         0 0 * * *
 concurrency:
   group: ${{ github.head_ref || github.sha }}-${{ github.workflow }}
